@@ -2,34 +2,36 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>Site title</title>
-  <meta name="description" content="Site description">
+  <title>François Ferrandis</title>
+  <meta name="description" content="Clairement laissé à l'abandon au bout de 2 jours">
 
   <!-- Recommended minimum -->
-  <meta property="og:title" content="Site title">
-  <meta property="og:description" content="Site description">
+  <meta property="og:title" content="Page perso de François Ferrandis">
+  <meta property="og:description" content="Clairement laissé à l'abandon au bout de 2 jours">
   <meta property="og:image" content="img/site-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3Ctext%20x='0'%20y='14'%3E🤏%3C/text%3E%3C/svg%3E"
+    type="image/svg+xml" />
 
   <!-- You could also inline the stylesheet -->
   <link rel="stylesheet" href="style.css">
 
 </head>
-
 <body>
 
   <header>
     <h1>
-      <a href="#home">Site title</a>
+      <a href="#home">Bienvenue</a>
     </h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#news">News</a>
+      <a href="#about">À propos</a>
+      <a href="#news">Blog</a>
       <a href="#photos">Photos</a>
       <a href="#portfolio">Portfolio</a>
     </nav>
@@ -40,21 +42,36 @@
     <section id="home">
       <!-- HOME -->
 
-      <p>This is the homepage, displayed by default.</p>
+      <p>
+        Bienvenue sur ce site que j'ai créé parce que je trouve ça cool d'avoir
+        un site super rapide qui tient en <a href="https://john-doe.neocities.org/" target="_blank">une seule page HTML</a>
+      </p>
+      <p>
+        Il y a une petite section <a href="#blog">blog</a> où je partage des idées, des articles, de liens.
+      </p>
+      <p>
+        J'ai aussi mis mes <a href="#photos">photos</a> parce qu'elles sont belles.
+      </p>
 
     </section>
 
     <section id="about">
       <!-- ABOUT -->
 
-      <p>This is the about page. <a href="#another-page">This is a link to another page</a>.</p>
-
-      <figure>
-        <a href="#img-about">
-          <img loading="lazy" alt="" src="//via.placeholder.com/1200x600/ddd/ccc" width="1200" height="600">
-        </a>
-        <figcaption>Example of an image with a link to a larger version.</figcaption>
-      </figure>
+      <p>
+        Coucou, moi c'est François Ferrandis, je suis un développeur web blanc trentenaire avec une moustache.
+        <label class="switch" for="demarco">vous voyez le genre</label><input type="checkbox" id="demarco">
+        <span class="toggled">
+          <img src="img/demarco.jpg">
+        </span>
+      </p>
+      <p>
+        Comme tous les boyz de mon espèce, j'aime la musique et les jeux vidéos indépendants.
+      </p>
+      <p>
+        J'ai aussi fait de la photo entre 2010 et 2015 en croyant que de capturer les beaux moments de
+        ma jeunesse allait me rendre immortel et m'aider à ne pas sombrer dans la dépression à 30 ans.
+      </p>
 
     </section>
 
@@ -62,19 +79,18 @@
       <!-- NEWS -->
 
       <article>
-        <h2>Blogging with Joe Bloggs <time>10.10.2020</time></h2>
-        <p> One <em>could</em> use this setup to write <s>a blog</s> short updates. For images make sure to use the
-          <code>loading="lazy"</code> attribute, so they get loaded only when needed.<label for="lazy">1</label><input
-            type="checkbox" id="lazy"><small>
+        <h1>Blogging with Joe Bloggs <time>10.10.2020</time></h1>
+        <p> One <em>could</em> use this setup to write <s>a blog</s> short updates.
+          For images make sure to use the <code>loading="lazy"</code> attribute,
+          so they get loaded only when needed.<label class="footnotes switch" for="lazy">1</label><input type="checkbox" id="lazy"><small class="toggled">
 
-            You might be able to use it for <code>iframe</code> embeds too(?), but maybe just write a link to the
-            Youtube video instead.
+          You might be able to use it for <code>iframe</code> embeds too(?), but maybe just write a link to the Youtube video instead.
 
           </small></p>
       </article>
 
       <article>
-        <h2><a href="https://example.com">Why Your Cat Bites You</a> <time>12.12.2004</time></h2>
+        <h1><a href="https://example.com">Why Your Cat Bites You</a> <time>12.12.2004</time></h1>
         <p>Honestly you don't want to know.</p>
       </article>
 
@@ -115,21 +131,13 @@
         <figure><img loading="lazy" alt="" src="//via.placeholder.com/3000x4000/ddd/ccc"></figure>
         <figure><img loading="lazy" alt="" src="//via.placeholder.com/4000x3000/ddd/ccc"></figure>
         <figure>
-          <p>You could also have text over here…</p>
+          <p>You can also have text over here.</p>
         </figure>
-        <figure>
-          <img loading="lazy" alt="" src="//via.placeholder.com/1000x1000/ddd/ccc">
-          <figcaption>…or image captions</figcaption>
-        </figure>
-        <figure style="background:#fdcb39">
-          <img loading="lazy" alt="" src="//via.placeholder.com/3000x4000/ddd/ccc">
-          <figcaption>add a solid background</figcaption>
-        </figure>
-        <figure class="cover">
-          <img loading="lazy" alt=""
-            src="https://64.media.tumblr.com/7904066936b9324571738bbbeeb082e9/tumblr_myopxy8uJI1qz4vi0o1_1280.jpg">
-          <p style="color:#fff">or go full bleed</p>
-        </figure>
+        <figure><img loading="lazy" alt="" src="//via.placeholder.com/1000x1000/ddd/ccc"></figure>
+        <figure><img loading="lazy" alt="" src="//via.placeholder.com/4000x3000/ddd/ccc"></figure>
+        <figure><img loading="lazy" alt="" src="//via.placeholder.com/3000x4000/ddd/ccc"></figure>
+        <figure><img loading="lazy" alt="" src="//via.placeholder.com/1000x1000/ddd/ccc"></figure>
+        <figure><img loading="lazy" alt="" src="//via.placeholder.com/4000x3000/ddd/ccc"></figure>
       </div>
 
     </section>
@@ -145,46 +153,30 @@
   </main>
 
   <!-- ----------
-    LIGHTBOX IMAGES
-    ----------- -->
+  LIGHTBOX IMAGES
+  ----------- -->
 
   <!-- PHOTOS grid -->
 
-  <a href="#photos" class="lightbox" id="img-01"><img loading="lazy" alt=""
-      src="//via.placeholder.com/3000x3000/ddd/ccc"></a>
-  <a href="#photos" class="lightbox" id="img-02"><img loading="lazy" alt=""
-      src="//via.placeholder.com/4000x3000/ddd/ccc"></a>
-  <a href="#photos" class="lightbox" id="img-03"><img loading="lazy" alt=""
-      src="//via.placeholder.com/3000x4000/ddd/ccc"></a>
-  <a href="#photos" class="lightbox" id="img-04"><img loading="lazy" alt=""
-      src="//via.placeholder.com/3000x3000/ddd/ccc"></a>
-  <a href="#photos" class="lightbox" id="img-05"><img loading="lazy" alt=""
-      src="//via.placeholder.com/4000x3000/ddd/ccc"></a>
-  <a href="#photos" class="lightbox" id="img-06"><img loading="lazy" alt=""
-      src="//via.placeholder.com/3000x4000/ddd/ccc"></a>
-  <a href="#photos" class="lightbox" id="img-07"><img loading="lazy" alt=""
-      src="//via.placeholder.com/3000x3000/ddd/ccc"></a>
-  <a href="#photos" class="lightbox" id="img-08"><img loading="lazy" alt=""
-      src="//via.placeholder.com/4000x3000/ddd/ccc"></a>
-  <a href="#photos" class="lightbox" id="img-09"><img loading="lazy" alt=""
-      src="//via.placeholder.com/3000x4000/ddd/ccc"></a>
-  <a href="#photos" class="lightbox" id="img-10"><img loading="lazy" alt=""
-      src="//via.placeholder.com/3000x3000/ddd/ccc"></a>
-  <a href="#photos" class="lightbox" id="img-11"><img loading="lazy" alt=""
-      src="//via.placeholder.com/4000x3000/ddd/ccc"></a>
-  <a href="#photos" class="lightbox" id="img-12"><img loading="lazy" alt=""
-      src="//via.placeholder.com/3000x4000/ddd/ccc"></a>
-  <a href="#photos" class="lightbox" id="img-13"><img loading="lazy" alt=""
-      src="//via.placeholder.com/3000x3000/ddd/ccc"></a>
-  <a href="#photos" class="lightbox" id="img-14"><img loading="lazy" alt=""
-      src="//via.placeholder.com/4000x3000/ddd/ccc"></a>
-  <a href="#photos" class="lightbox" id="img-15"><img loading="lazy" alt=""
-      src="//via.placeholder.com/3000x4000/ddd/ccc"></a>
+  <a href="#photos" class="lightbox" id="img-01"><img loading="lazy" alt="" src="//via.placeholder.com/3000x3000/ddd/ccc"></a>
+  <a href="#photos" class="lightbox" id="img-02"><img loading="lazy" alt="" src="//via.placeholder.com/4000x3000/ddd/ccc"></a>
+  <a href="#photos" class="lightbox" id="img-03"><img loading="lazy" alt="" src="//via.placeholder.com/3000x4000/ddd/ccc"></a>
+  <a href="#photos" class="lightbox" id="img-04"><img loading="lazy" alt="" src="//via.placeholder.com/3000x3000/ddd/ccc"></a>
+  <a href="#photos" class="lightbox" id="img-05"><img loading="lazy" alt="" src="//via.placeholder.com/4000x3000/ddd/ccc"></a>
+  <a href="#photos" class="lightbox" id="img-06"><img loading="lazy" alt="" src="//via.placeholder.com/3000x4000/ddd/ccc"></a>
+  <a href="#photos" class="lightbox" id="img-07"><img loading="lazy" alt="" src="//via.placeholder.com/3000x3000/ddd/ccc"></a>
+  <a href="#photos" class="lightbox" id="img-08"><img loading="lazy" alt="" src="//via.placeholder.com/4000x3000/ddd/ccc"></a>
+  <a href="#photos" class="lightbox" id="img-09"><img loading="lazy" alt="" src="//via.placeholder.com/3000x4000/ddd/ccc"></a>
+  <a href="#photos" class="lightbox" id="img-10"><img loading="lazy" alt="" src="//via.placeholder.com/3000x3000/ddd/ccc"></a>
+  <a href="#photos" class="lightbox" id="img-11"><img loading="lazy" alt="" src="//via.placeholder.com/4000x3000/ddd/ccc"></a>
+  <a href="#photos" class="lightbox" id="img-12"><img loading="lazy" alt="" src="//via.placeholder.com/3000x4000/ddd/ccc"></a>
+  <a href="#photos" class="lightbox" id="img-13"><img loading="lazy" alt="" src="//via.placeholder.com/3000x3000/ddd/ccc"></a>
+  <a href="#photos" class="lightbox" id="img-14"><img loading="lazy" alt="" src="//via.placeholder.com/4000x3000/ddd/ccc"></a>
+  <a href="#photos" class="lightbox" id="img-15"><img loading="lazy" alt="" src="//via.placeholder.com/3000x4000/ddd/ccc"></a>
 
   <!-- Other images -->
 
-  <a href="#about" class="lightbox" id="img-about"><img loading="lazy" alt=""
-      src="//via.placeholder.com/2400x1200/ddd/ccc"></a>
+    <!-- None so far -->
 
 </body>
 

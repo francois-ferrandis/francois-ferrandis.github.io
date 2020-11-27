@@ -191,8 +191,11 @@ pre, textarea { /* for code samples */
 
 /* Inline footnotes */
 
-label {
+label.switch {
   cursor: pointer;
+}
+
+label.footnotes {
   vertical-align: super;
   line-height: 1;
   font-size: .75em;
@@ -203,15 +206,15 @@ label:hover {
   color: var(--highlight);
 }
 
-label:before {content:"[";}
-label:after {content:"]";}
+label.switch:before {content:"[";}
+label.switch:after {content:"]";}
 
 label + input,
-label + input + small {
+label + input + .toggled {
   display: none;
 }
 
-input:checked + small {
+input:checked + .toggled {
   display: block;
   padding: .8em 0 1em 2.5vw;;
 }
@@ -452,9 +455,9 @@ article time {
   
   /* Inline footnotes */
   
-  label + input + small { display: inline; }
-  label + input + small:before { content: "["; }
-  label + input + small:after { content: "]"; }
+  label + input + .toggled { display: inline; }
+  label + input + .toggled:before { content: "["; }
+  label + input + .toggled:after { content: "]"; }
   
   /* Slides */
   
